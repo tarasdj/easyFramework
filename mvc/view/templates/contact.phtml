@@ -1,0 +1,47 @@
+<div class="main-wrapper">
+  <div class="right-side">    
+  <h1 class="company-info"><span class="company-color-text">GT-engineering</span></h1>   
+    <p>
+     <span class="abz">We are ukrainian company which have more</span> 5 year expirience in OPC HDA technology. We are the company have more 5 year expirience in web development and technically development for industry solution. We help you in your ideas. We provide support for our software products 24 hours a day. We implement our software to our production individually. If you want contact us, please use this feedback form.  
+    </p>
+    <div class="located">
+      <img id="flag" src="/files/img/Flag_of_Ukraine.png" alt="" width="100px" height="50px">
+      <p>
+        We are located:</br>
+          Ukraine, Rivne Sity
+      </p>
+
+    <div class="mail"> 
+      <a href="mailto:support@automatic.co.ua" target="_top">support@automatic.co.ua</a>
+    </div>       
+    </div>
+    <img class="image-margin-auto" src="/files/img/my-logo-white.png" alt="">
+  </div>
+  <div class="left-side"> 
+    <h1>Contact US</h1>
+    <form method="POST" class="form-contact" action="?page=contact-action">
+      <div class="field-form" >
+        <input type="text" name="name" class="input-text" placeholder="Your name">
+      </div> 
+
+      <div class="field-form"> 
+        <input type="text" name="subject" class="input-text"  placeholder="Subject" required>
+      </div> 
+
+      <div class="field-form"> 
+        <input type="email" name="email" class="input-text" placeholder="E-mail" required>
+      </div> 
+
+      <div class="field-form"> 
+        <textarea rows="7" cols="35" name="message" class="input-text" placeholder="Message" required></textarea>
+      </div>
+
+      <div class="g-recaptcha" data-sitekey="<?php print $public_key; ?>"></div>
+
+      <div class="field-form">
+        <input type="submit" class="input-submit" value="Submit">
+      </div>
+    </form>
+  </div>
+</div>
+

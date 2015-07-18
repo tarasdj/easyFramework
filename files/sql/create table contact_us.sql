@@ -1,0 +1,1 @@
+create table contact_us (id MEDIUMINT NOT NULL AUTO_INCREMENT, subject varchar(100), your_name varchar(100), e_mail varchar(100), message longtext, date_create datetime, uid int, PRIMARY KEY  (id))ENGINE=InnoDB AUTO_INCREMENT=110 DEFAULT CHARSET=utf8;

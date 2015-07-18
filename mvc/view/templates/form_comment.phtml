@@ -1,0 +1,19 @@
+<div class="main-wrapper">
+<div class="comment">
+  <h1>Add your comment</h1>
+  <form method="POST" class="form-comment" action="?page=comment-action&gid=<?php print $comment_group; ?>">
+
+    <div class="field-form"> 
+      <input type="text" name="subject" class="input-text"  placeholder="Subject" required>
+    </div> 
+
+    <div class="field-form"> 
+      <textarea rows="7" cols="35" name="comment" class="input-text" placeholder="Comment" required></textarea>
+    </div>
+
+    <div class="field-form">
+      <input type="submit" class="input-submit" value="Submit">
+    </div>
+  </form>
+</div>
+</div>

@@ -1,0 +1,28 @@
+<div class="main-wrapper">
+	<?php while ($row = mysql_fetch_assoc($result)): ?>
+		<div class="field-post title"><h1><?php print urldecode($row['title']); ?></h1></div>
+		<div class="field-post body"><span class="abz"></span><?php print urldecode($row['blog_text']); ?></div>
+		<div class="field-blog post-date"><i class="fa fa-calendar"></i>&nbsp<span><?php print $row['post_date']; ?></span></div>
+	<?php endwhile; ?>
+
+	<div class="download-files">
+		<span>Available the download files: </span>
+		<?php while($row = mysql_fetch_assoc($download)): ?> 
+			<div class="file-field-download">
+				<div class="field-blog download-count">
+					<i class="fa fa-download"></i>
+					<?php print ($row['cd']); ?>
+				</div>
+				<div class="field-blog download-file">				
+					<a href="?page=download&fname=<?php print $row['filename']; ?>"><?php print ($row['file_title']); ?></a>
+				</div>
+			</div>	
+		<?php endwhile; ?>
+	</div>
+
+	<div class="categories">
+		<?php while($row = mysql_fetch_assoc($categories)): ?> 
+			<div class="field-blog blogcategory"><a href="?page=post-category&category=<?php print urldecode($row['id']); ?>"><?php print urldecode($row['category']); ?></a></div>
+		<?php endwhile; ?>
+	</div>
+</div>

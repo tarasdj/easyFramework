@@ -1,0 +1,31 @@
+
+<div class="main-wrapper">
+  <div class="blog">
+    <h1>Add your post</h1>
+    <form method="POST" class="form-blog" action="?page=action-blog-post-edit&post=<?php print $post_id; ?>">
+
+      <div class="field-form"> 
+        <input type="text" name="title" class="input-text"  placeholder="Title" required value="<?php print $title; ?>">
+      </div> 
+
+     <div class="field-form"> 
+        <textarea rows="3" cols="35" name="teaser" class="input-text" placeholder="Teaser" required><?php print $teaser; ?></textarea>
+      </div>
+
+      <div class="field-form"> 
+        <textarea rows="20" cols="35" name="body" class="input-text" placeholder="Body" required><?php print $body; ?></textarea>
+      </div>
+
+
+      <?php while($row = mysql_fetch_assoc($dataset)): ?>  
+        <div class="field-form" hidden>       
+            <input type="checkbox" name="option[]" value="<?php print $row['id']; ?>"><?php print $row['category']; ?> </br>  
+        </div>    
+      <?php endwhile; ?>
+
+      <div class="field-form">
+        <input type="submit" class="input-submit" value="Submit">
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+	<div class="left-side">
+		<h1>Dashboard</h1>
+		<div class="user-info-wrapper">
+			<?php while($row = mysql_fetch_assoc($result)): ?>
+				<div class="user-info id"><h2>User Identificator</h2>	<?php print $row['id']; ?></div> 
+				<div class="user-info login"> <h2>User login</h2> <?php print $row['login']; ?></div>
+				<div class="user-info email"> <h2>User mail</h2> <?php print $row['email']; ?></div>
+				<div class="user-info last-logined"> <h2>Last Logined</h2> <?php print $row['auth']; ?></div>
+			<?php endwhile; ?>	
+			<div class="logout"><a class="slyle-link-1" href="?page=logout">Logout</a></div>
+		</div>
+	</div>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <?php controller::header(); ?>
+<body>
+  <div class="row">
+    <?php controller::getAdminPanel(); ?>
+  </div>
+  <div class="main-menu">
+    <div class="row">   
+      <?php user::User(); ?>
+      <?php view::mainMenu(); ?>
+    </div>
+  </div>
+  <div class="row">
+    <div class="content">
+      <?php $this->rout(); ?>
+    </div>
+  </div>
+</body>
+<div class="row">
+  <footer>
+    <?php view::footer(); ?> 
+  </footer>
+</div>
+</html>

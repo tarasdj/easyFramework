@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+		<!--	created with www.mysitemapgenerator.com	-->
+		<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+	<loc>http://automatic.co.ua/</loc>
+	<lastmod>2015-06-19T15:12:02+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>http://automatic.co.ua/?page=user</loc>
+	<lastmod>2015-06-19T15:12:03+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>http://automatic.co.ua/?page=opc-hda</loc>
+	<lastmod>2015-06-19T15:12:04+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>http://automatic.co.ua/?page=systems</loc>
+	<lastmod>2015-06-19T15:12:04+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>http://automatic.co.ua/?page=product</loc>
+	<lastmod>2015-06-19T15:12:05+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>http://automatic.co.ua/?page=contact</loc>
+	<lastmod>2015-06-19T15:12:06+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>http://automatic.co.ua/?page=registration</loc>
+	<lastmod>2015-06-19T15:12:06+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>http://automatic.co.ua/?page=bug-list</loc>
+	<lastmod>2015-06-19T15:12:07+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>http://automatic.co.ua/?page=re-count</loc>
+	<lastmod>2015-06-19T15:12:07+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+</urlset>

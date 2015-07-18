@@ -1,0 +1,13 @@
+<div class="main-wrapper">
+<div class="comment-list">
+	<h1>People comments</h1>
+	<?php while($row = mysql_fetch_assoc($result)): ?>
+	<div class="comment-item">
+		<div class="comment-field login"><?php print urldecode($row['login']); ?></div>
+		<div class="comment-field comment_day"><?php print urldecode($row['comment_day']); ?></div>
+		<div class="comment-field subject"><?php print urldecode($row['subject']); ?></div>
+		<div class="comment-field comment__"><?php print urldecode($row['comment']); ?></div>		
+	</div>	
+	<?php endwhile; ?>
+</div>
+</div>

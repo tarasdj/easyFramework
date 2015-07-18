@@ -1,0 +1,11 @@
+<div class="main-wrapper">
+<h1>Feedback List</h1>
+<div class="user-info-wrapper">
+	<?php while($row = mysql_fetch_assoc($result)): ?>
+	<div class="info-block">				
+			<div class="field-feedback-list"> <a href="?page=feedbackitem&item=<?php print $row['id'] ?>"> <?php print urldecode($row['subject']); ?></a></div>
+			<div class="field-feedback-list"><?php print urldecode($row['date_create']); ?></div>	
+	</div>	
+	<?php endwhile; ?>	
+</div>
+</div>

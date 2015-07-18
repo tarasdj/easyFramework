@@ -1,0 +1,22 @@
+<div class="main-wrapper">
+  <div class="left-side">
+  <h1>Form for add the files</h1>
+  <form method="POST" action="?page=add-file-post&post=<?php print $post_id; ?>" enctype="multipart/form-data">
+
+    <div class="field-form" >
+      <input type="text" name="filetitle" class="input-text" placeholder="File title" required>
+    </div> 
+
+    <div class="field-form">
+      <label>*Attach file:
+        <input type="file" id="id-img" accept="image/jpeg,image/png" name="uploadfile" required></br>
+      </label>
+    </div> 
+
+    <div class="field-form">
+      <input type="submit" class="input-submit" value="Submit">
+    </div>  
+
+  </form>
+  </div>
+</div>  

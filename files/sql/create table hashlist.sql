@@ -1,0 +1,1 @@
+create table hashlist (id MEDIUMINT NOT NULL AUTO_INCREMENT, hash varchar(100), IP varchar(100), uid int, auth datetime, PRIMARY KEY  (id))ENGINE=InnoDB AUTO_INCREMENT=110 DEFAULT CHARSET=utf8;

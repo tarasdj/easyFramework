@@ -1,0 +1,28 @@
+@media (max-width: 590px) {
+
+  .menu {
+    display: none;
+    float: right;
+    margin: 14px 44px 0px 0px;
+  }
+
+  .main-menu {
+    background-color: rgba(47, 65, 84, 0.6);
+    overflow: auto;
+    padding: 0px;
+    height: auto;
+  }
+
+  .fa-bars {
+    font-size: 50px !important;
+    color: #fff;
+  }
+
+  .toogle {
+    float: right;
+    padding: 1px;
+    display: block;
+    margin-right: 91px;
+    margin-top: 4px;
+  }
+}

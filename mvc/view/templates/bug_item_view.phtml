@@ -1,0 +1,25 @@
+<?php while($row = mysql_fetch_assoc($result)): ?>
+<?php if ($row['status'] == '0'): $status = 'proccess'; else: $status = 'done'; endif;?>
+<div class="main-wrapper">  
+  <div class="item-bugs-single item-bugs-field-title"><?php print urldecode($row['title']); ?></div>
+  <div class="right-side">
+    <div class="item-bugs-single item-bugs-field-file"><a href="javascript:void(0);" rel="gallery" class="popup-link-1"><img src="files/upload/<?php print $row['file']; ?>" width="100%" height="100%"></a></div>
+  </div>
+
+  <div class="left-side">
+    <div class="item-bugs-single item-bugs-field-description"><h2>Bug Descrition</h2><?php print urldecode($row['description']); ?></div>
+    <div class="item-bugs-single item-bugs-field-comment"><h2>Developer Comment</h2><?php print urldecode($row['comment']); ?></div>
+    <div class="item-bugs-single item-bugs-date-post"><h2>Post Date</h2><?php print $row['date_create']; ?></div>
+    <div class="item-bugs-single single-status <?php print $status;?>"><h2><?php print $status;?></h2><h3><?php print $row['date_done_bug']; ?></h3></div>
+  </div>
+</div>
+  <script>
+    $('.popup-link-1').magnificPopup({
+      items: {
+      src: "files/upload/<?php print $row['file']; ?>"
+      },
+      type: 'image' // this is default type
+    });
+  </script>
+<?php endwhile; ?>
+

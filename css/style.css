@@ -1,0 +1,103 @@
+﻿@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url("../fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url("../fonts/OpenSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'OpenSans-CondBold';
+  src: url("../fonts/OpenSans-CondBold.ttf");
+}
+
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url("../fonts/OpenSans-Light.ttf");
+}
+
+footer {
+  background: #24242A;
+  color: #fff; 
+  padding: 30px;
+  overflow: auto;
+}
+
+html {
+  font-family: 'OpenSans-Regular';
+}
+
+tr {
+  border: 1px solid #16a085;
+  text-align: left;
+  background: #000;
+}
+
+td {
+  padding: 8px;
+}
+
+h1 {
+  font-family: 'OpenSans-Bold';
+  font-size: 24px;
+  padding: 20px;
+  color: #555;
+}
+
+h2 {
+  font-family: 'OpenSans-Bold';
+  font-size: 20px;
+  padding: 15px;
+  color: #555;
+}
+
+form {
+  text-align: center;  
+  border: 1px solid #1ABC9C;
+  margin: auto;
+  padding: 24px 23px 20px;
+  background-color: #00141B;
+  border-radius: 6px;
+}
+
+h3{
+  font-size: 18px;
+  font-family: 'OpenSans-CondBold';
+  color: #fff;
+}
+
+p{
+  margin: 10px;
+}
+
+body {
+  /*background-image: url("/files/img/bkcg.png");*/
+  background: #262626;
+}
+
+a {
+  color: #1ABC9C;
+}
+
+.success {
+  padding: 10px;
+  border: 1px solid #2ecc71;
+  background: #27ae60;
+}
+
+.error {
+  padding: 10px;
+  border: 1px solid #e74c3c;
+  background: #c0392b;
+}
+
+.warning{
+  padding: 10px;
+  border: 1px solid #d35400;
+  background: #e67e22;
+  margin-top: 10px;  
+}
+
+

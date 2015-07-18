@@ -1,0 +1,29 @@
+<h1 class="title-page">This is Registration Form</h1></br>
+
+<div class="wrapper">
+<div class="left-side">
+  <form method="POST" class="auth" action="?page=reg-form-action">
+    <div class="field-form" >
+      <input type="text" name="login" class="input-text" placeholder="Login" required>
+    </div> 
+
+    <div class="field-form" >
+      <input type="email" name="mail" class="input-text" placeholder="E-Mail" required>
+    </div> 
+
+    <div class="field-form"> 
+      <input type="password" name="password" class="input-text" placeholder="Password" required>
+    </div> 
+
+    <div class="field-form">
+      <input type="password" name="password_confirm" class="input-text" placeholder="Password" required>
+    </div> 
+
+    <div class="g-recaptcha" data-sitekey="<?php print $public_key; ?>"></div>
+
+    <div class="field-form">
+      <input type="submit" class="input-submit" value="Submit">
+    </div>
+  </form>
+</div>
+<div class="right-side"> </div>

@@ -1,0 +1,15 @@
+<div class="main-wrapper">
+<div class="user-info-wrapper">
+	<?php while($row = mysql_fetch_assoc($result)): ?>
+	<div class="info-block">				
+			<div class="field-feedback-item subject"><h1><?php print urldecode($row['subject']); ?></h1></div>
+			<div class="field-feedback-item your-name"><h2>Name:</h2><?php print urldecode($row['your_name']); ?></div>
+			<div class="field-feedback-item e-mail"><h2>E-mail:</h2><?php print urldecode($row['e_mail']); ?></div>
+			<div class="field-feedback-item message"><h2>Message:</h2><?php print urldecode($row['message']); ?></div>			
+			<div class="field-feedback-item uid"><h2>Uid:</h2><?php print urldecode($row['uid']); ?></div>
+			<div class="field-feedback-item datec-reate"><h2>Send Date:</h2><?php print urldecode($row['date_create']); ?></div>
+			<div class="field-feedback-item ip"><h2>IP-adresses:</h2><?php print $row['IP']; ?></div>	
+	</div>	
+	<?php endwhile; ?>
+</div>
+</div>

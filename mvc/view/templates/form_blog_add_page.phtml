@@ -1,0 +1,39 @@
+<div class="main-wrapper">
+  <div class="blog">
+    <h1>Add your post</h1>
+    <form method="POST" class="form-blog" action="?page=action-blog-post">
+
+      <div class="field-form"> 
+        <input type="text" name="title" class="input-text"  placeholder="Title" required>
+      </div> 
+
+      <div class="field-form"> 
+        <textarea rows="3" cols="35" name="teaser" class="input-text" placeholder="Teaser" required></textarea>
+      </div>
+
+      <div class="field-form"> 
+        <textarea rows="20" cols="35" name="blogcontent" class="input-text" placeholder="Text" required></textarea>
+      </div>
+
+      
+      <?php while($row = mysql_fetch_assoc($dataset)): ?>  
+        <div class="field-form">       
+            <input type="checkbox" name="option[]" value="<?php print $row['id']; ?>"><?php print $row['category']; ?> </br>  
+        </div>    
+      <?php endwhile; ?>
+      
+
+      <div class="field-form" hidden> 
+        <select name="" id="" onchange="ajaxAddBlogCategories(0, this.options[this.selectedIndex].value)">
+          <?php while($row = mysql_fetch_assoc($dataset)): ?>        
+              <option value="<?php print $row['id']; ?>"><?php print $row['category']; ?></option>       
+          <?php endwhile; ?>
+        </select>
+      </div>
+
+      <div class="field-form">
+        <input type="submit" class="input-submit" value="Submit">
+      </div>
+    </form>
+  </div>
+</div>

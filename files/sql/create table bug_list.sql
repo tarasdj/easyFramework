@@ -1,0 +1,1 @@
+create table bug_list (id MEDIUMINT NOT NULL AUTO_INCREMENT, title varchar(100), description longtext, date_create datetime, file varchar(150), uid int, comment longtext, status int, PRIMARY KEY  (id))ENGINE=InnoDB AUTO_INCREMENT=110 DEFAULT CHARSET=utf8;

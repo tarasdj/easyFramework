@@ -1,0 +1,21 @@
+<div class="main-wrapper">
+<div class="history">
+	<h2>Users</h2>
+	<table  bgcolor="#ecf0f1">
+		<tr class="table-head">
+			<td>ID</td>
+			<td>Login</td>
+			<td>E-Mail</td>
+			<td>Created</td>
+			<td>Updated</td>
+		</tr>	
+		<?php while($row = mysql_fetch_assoc($result)): ?>
+		<tr>
+			<?php foreach($row as $item): ?>
+				<td><?php print  $item; ?></td>
+			<?php endforeach; ?>
+	    </tr>
+		<?php endwhile; ?>
+	</table>
+</div>
+</div>

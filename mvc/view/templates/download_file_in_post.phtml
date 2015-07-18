@@ -1,0 +1,17 @@
+<div class="main-wrapper">
+	<div class="download-files">
+		<span>Available the download files: </span>
+		<?php while($row = mysql_fetch_assoc($download)): ?> 
+			<div class="file-field-download">
+				<div class="field-blog download-count">
+					<i class="fa fa-download"></i>
+					<?php print ($row['cd']); ?>
+				</div>
+				<div class="field-blog download-file">				
+					<a href="?page=download&fname=<?php print $row['filename']; ?>"><?php print ($row['file_title']); ?></a>
+					<a href="/?page=action-delete-file-from-post&file=<?php print $row['id']; ?>&post=<?php print $row['post_id']; ?>"><i class="fa fa-times"></i></a>
+				</div>
+			</div>	
+		<?php endwhile; ?>
+	</div>
+</div>	

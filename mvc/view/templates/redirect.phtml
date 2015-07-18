@@ -1,0 +1,17 @@
+<div class="redirect">
+	<script>
+		$(document).ready(function(){
+			var timerID = setInterval(decvalue, 1000);
+			var time_value = 6;
+			function decvalue(){
+				time_value = time_value - 1;
+				$('#time-red').text(time_value);
+				if (time_value == 0){
+					clearTimeout(timerID);
+					window.location = "?page=<?php print $page; ?>";
+				}
+			}
+		})
+	</script>
+	<span>You will redirect in a moment:</span><span id="time-red"></span><span>sec</span>
+</div>

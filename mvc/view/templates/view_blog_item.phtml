@@ -1,0 +1,26 @@
+	<div class="post-item">
+		<?php while($row = mysql_fetch_assoc($body)): ?>
+			<div class="field-blog title"><a href="?page=single-post&post=<?php print urldecode($row['id']); ?>"><?php print urldecode($row['title']); ?></a></div>
+			<div class="field-blog teaser"><?php print urldecode($row['teaser']); ?></div>
+			<div class="field-blog post-date"><i class="fa fa-calendar"></i>&nbsp<span><?php print $row['post_date']; ?></span></div>
+			<div class="items-container">
+				<div class="field-blog view-count">
+					<i class="fa fa-eye"></i>&nbsp
+					<?php print $row['view_count']; ?>
+				</div>
+				   <?php $link = $this->connect_mysql(); ?>
+				   <?php $result = model::getComment($link, $row['id']); ?>
+	               <?php $comments = mysql_num_rows($result); ?>
+	               <?php $result = model:: getDownloadList($link, $row['id']); ?>
+	               <?php $attach = mysql_num_rows($result); ?>
+			<?php endwhile; ?>
+				<div class="field-blog comments"><i class="fa fa-comments"></i>&nbsp<?php print $comments; ?> </div>
+				<div class="field-blog attach"> <?php if ($attach > 0) {print '<i class="fa fa-paperclip"></i>';}?></div>
+		    </div>
+		<div class="categories">
+			<?php while($row = mysql_fetch_assoc($categories)): ?> 
+				<div class="field-blog blogcategory"><a href="?page=post-category&category=<?php print urldecode($row['id']); ?>"><?php print urldecode($row['category']); ?></a></div>
+			<?php endwhile; ?>
+		</div>
+	</div>	
+

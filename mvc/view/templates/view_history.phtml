@@ -1,0 +1,22 @@
+<div class="main-wrapper">
+<div class="history">
+	<h2>Site history</h2>
+	<table  bgcolor="#ecf0f1">
+		<tr class="table-head">
+			<td>ID</td>
+			<td>DateTime</td>
+			<td>IP</td>
+			<td>Page</td>
+			<td>Country</td>
+			<td>City</td>
+		</tr>	
+		<?php while($row = mysql_fetch_assoc($result)): ?>
+		<tr>
+			<?php foreach($row as $item): ?>
+				<td><?php print  $item; ?></td>
+			<?php endforeach; ?>
+	    </tr>
+		<?php endwhile; ?>
+	</table>
+</div>
+</div>
